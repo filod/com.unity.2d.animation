@@ -146,6 +146,7 @@ namespace UnityEngine.Experimental.U2D.Animation
             var sr = spriteRenderer;
             if (sr != null && (sprite != null || validEntry))
                 sr.sprite = sprite;
+            else sr.sprite = null;
         }
 
         void OnTransformParentChanged()
